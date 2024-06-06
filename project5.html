@@ -5,59 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Location and Speed Tracker</title>
     <link rel="stylesheet" href="project_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Vehicle Location and Speed Tracker</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#problem">Problem Statement</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#technologies">Technologies Used</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#enhancements">Future Enhancements</a></li>
-                <li><button id="theme-toggle" onclick="toggleTheme()">Switch to Dark Mode</button></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <h1>Vehicle Location and Speed Tracker</h1>
+            <a href="index.html" class="button home-button">Home</a>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
     </header>
     <section>
-        <img src="media/vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker" class="project-icon">
-        <h2 id="overview">Overview</h2>
-        <p>IOT based vehicle Location and speed tracker (Developed an IOT based location and speed tracker for vehicles).</p>
+        <div class="container">
+            <img src="media/vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker" class="project-icon-small">
+            <h2 id="overview">Overview</h2>
+            <p>IOT based vehicle Location and speed tracker (Developed an IOT based location and speed tracker for vehicles).</p>
 
-        <h2 id="problem">Problem Statement</h2>
-        <p>Monitoring the location and speed of vehicles in real-time is essential for fleet management, safety, and logistics. There is a need for an efficient system that can provide accurate and real-time data.</p>
+            <h2 id="problem">Problem Statement</h2>
+            <p>Monitoring the location and speed of vehicles in real-time is essential for fleet management, safety, and logistics. There is a need for an efficient system that can provide accurate and real-time data.</p>
 
-        <h2 id="solution">Solution</h2>
-        <p>This project develops an IoT-based system that tracks the location and speed of vehicles in real-time using GPS and other sensors.</p>
+            <h2 id="solution">Solution</h2>
+            <p>This project develops an IoT-based system that tracks the location and speed of vehicles in real-time using GPS and other sensors.</p>
 
-        <h2 id="technologies">Technologies Used</h2>
-        <ul>
-            <li>IoT</li>
-            <li>GPS</li>
-            <li>Arduino/Raspberry Pi</li>
-            <li>Real-time Data Processing</li>
-        </ul>
+            <h2 id="technologies">Technologies Used</h2>
+            <ul>
+                <li>IoT</li>
+                <li>GPS</li>
+                <li>Arduino/Raspberry Pi</li>
+                <li>Real-time Data Processing</li>
+            </ul>
 
-        <h2 id="features">Features</h2>
-        <ul>
-            <li>Real-time location tracking</li>
-            <li>Speed monitoring</li>
-            <li>Data logging and analysis</li>
-            <li>Alerts and notifications</li>
-        </ul>
+            <h2 id="features">Features</h2>
+            <ul>
+                <li>Real-time location tracking</li>
+                <li>Speed monitoring</li>
+                <li>Data logging and analysis</li>
+                <li>Alerts and notifications</li>
+            </ul>
 
-        <h2 id="enhancements">Future Enhancements</h2>
-        <ul>
-            <li>Adding geofencing capabilities</li>
-            <li>Implementing driver behavior analysis</li>
-            <li>Integrating with existing fleet management systems</li>
-        </ul>
+            <h2 id="enhancements">Future Enhancements</h2>
+            <ul>
+                <li>Adding geofencing capabilities</li>
+                <li>Implementing driver behavior analysis</li>
+                <li>Integrating with existing fleet management systems</li>
+            </ul>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+        </div>
     </footer>
     <script src="scripts.js"></script>
 </body>

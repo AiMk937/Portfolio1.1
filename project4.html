@@ -5,59 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Image Upscaler</title>
     <link rel="stylesheet" href="project_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>AI Image Upscaler</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#problem">Problem Statement</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#technologies">Technologies Used</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#enhancements">Future Enhancements</a></li>
-                <li><button id="theme-toggle" onclick="toggleTheme()">Switch to Dark Mode</button></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <h1>AI Image Upscaler</h1>
+            <a href="index.html" class="button home-button">Home</a>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
     </header>
     <section>
-        <img src="media/ai_image_upscaler.jpeg" alt="AI Image Upscaler" class="project-icon">
-        <h2 id="overview">Overview</h2>
-        <p>AI image Upscaler using CNN (Developed an AI software which improves image quality).</p>
+        <div class="container">
+            <img src="media/ai_image_upscaler.jpeg" alt="AI Image Upscaler" class="project-icon-small">
+            <h2 id="overview">Overview</h2>
+            <p>AI image Upscaler using CNN (Developed an AI software which improves image quality).</p>
 
-        <h2 id="problem">Problem Statement</h2>
-        <p>Low-resolution images often suffer from quality issues when scaled up. There is a need for an AI-based solution that can upscale images while preserving and enhancing their quality.</p>
+            <h2 id="problem">Problem Statement</h2>
+            <p>Low-resolution images often suffer from quality issues when scaled up. There is a need for an AI-based solution that can upscale images while preserving and enhancing their quality.</p>
 
-        <h2 id="solution">Solution</h2>
-        <p>This project uses Convolutional Neural Networks (CNN) to upscale images, improving their resolution and quality.</p>
+            <h2 id="solution">Solution</h2>
+            <p>This project uses Convolutional Neural Networks (CNN) to upscale images, improving their resolution and quality.</p>
 
-        <h2 id="technologies">Technologies Used</h2>
-        <ul>
-            <li>Convolutional Neural Networks (CNN)</li>
-            <li>Python</li>
-            <li>TensorFlow</li>
-            <li>OpenCV</li>
-        </ul>
+            <h2 id="technologies">Technologies Used</h2>
+            <ul>
+                <li>Convolutional Neural Networks (CNN)</li>
+                <li>Python</li>
+                <li>TensorFlow</li>
+                <li>OpenCV</li>
+            </ul>
 
-        <h2 id="features">Features</h2>
-        <ul>
-            <li>High-quality image upscaling</li>
-            <li>Supports various image formats</li>
-            <li>Batch processing capability</li>
-            <li>User-friendly interface</li>
-        </ul>
+            <h2 id="features">Features</h2>
+            <ul>
+                <li>High-quality image upscaling</li>
+                <li>Supports various image formats</li>
+                <li>Batch processing capability</li>
+                <li>User-friendly interface</li>
+            </ul>
 
-        <h2 id="enhancements">Future Enhancements</h2>
-        <ul>
-            <li>Adding support for video upscaling</li>
-            <li>Implementing real-time upscaling for live streams</li>
-            <li>Developing a mobile app version</li>
-        </ul>
+            <h2 id="enhancements">Future Enhancements</h2>
+            <ul>
+                <li>Adding support for video upscaling</li>
+                <li>Implementing real-time upscaling for live streams</li>
+                <li>Developing a mobile app version</li>
+            </ul>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+        </div>
     </footer>
     <script src="scripts.js"></script>
 </body>
