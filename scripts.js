@@ -1,32 +1,37 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeIcon = themeToggleBtn.querySelector('i');
 
-    // Check the local storage for theme preference
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-        body.classList.add(currentTheme);
-        if (currentTheme === 'dark-mode') {
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        }
+    // Check for saved theme preference in local storage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        updateIcon(savedTheme);
     }
 
-    // Theme toggle function
-    window.toggleTheme = function() {
-        body.classList.toggle('dark-mode');
-
+    themeToggle.addEventListener('click', function() {
         if (body.classList.contains('dark-mode')) {
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-            localStorage.setItem('theme', 'dark-mode');
-        } else {
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
+            body.classList.remove('dark-mode');
             localStorage.setItem('theme', '');
+            updateIcon('');
+        } else {
+            body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark-mode');
+            updateIcon('dark-mode');
         }
-    };
+    });
+
+    function updateIcon(theme) {
+        const icon = themeToggle.querySelector('i');
+        if (theme === 'dark-mode') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    }
 
     // Form submission handler
     document.querySelector('.contact-form').addEventListener('submit', function(e) {

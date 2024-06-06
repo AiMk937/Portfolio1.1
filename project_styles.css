@@ -127,3 +127,135 @@ footer {
     color: var(--footer-text-color, white);
     border-top: 1px solid #e0e0e0;
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+    --background-color: #333;
+    --text-color: #f0f0f0;
+    --header-background-color: #444;
+    --header-text-color: #f0f0f0;
+    --section-background-color: #444;
+    --section-text-color: #f0f0f0;
+    --footer-background-color: #444;
+    --footer-text-color: #f0f0f0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    #qualifications .skills-container {
+        flex-direction: column;
+    }
+
+    #qualifications .skills-box {
+        margin-bottom: 1.5em;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    section {
+        padding: 1em;
+        margin: 1em auto;
+        max-width: 95%;
+    }
+
+    .project-box {
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    section {
+        padding: 1.5em;
+        margin: 1.5em auto;
+        max-width: 90%;
+    }
+
+    .project-box {
+        width: 48%;
+        margin: 1em 0;
+    }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    section {
+        padding: 2em;
+        margin: 2em auto;
+        max-width: 95%;
+    }
+
+    .project-box {
+        width: 30%;
+        margin: 1em 0;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    section {
+        padding: 2em;
+        margin: 2em auto;
+        max-width: 1200px;
+    }
+
+    .project-box {
+        width: 30%;
+        margin: 1em 0;
+    }
+}
