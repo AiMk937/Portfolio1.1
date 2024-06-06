@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimaan Khan's Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="landing-page">
+        <div class="landing-content">
+            <h1>Aimaan Khan</h1>
+            <p class="contact-icons">
+                <a href="mailto:aimaanjkhaan@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/aimaan-khan-56a621250/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AiMk937" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/__aimaan_k__/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+            <button class="menu-icon" onclick="toggleNavbar()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="navbar" class="hidden">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a self-motivated student seeking an internship opportunity in a dynamic and innovative organization. My goal is to acquire knowledge and experience while contributing to software development projects. I am open to all assignments and eager to leverage my technical and creative skills to excel in a challenging software developer role, working on the development and maintenance of innovative software solutions.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="media/currency_converter.jpeg" alt="Currency Converter">
+                <h3><a href="project1.html">Currency Converter</a></h3>
+                <p>Currency converter based on Java (API integration for real-time conversion rates)</p>
+            </div>
+            <div class="project-box">
+                <img src="media/2048_game.jpeg" alt="2048 Game">
+                <h3><a href="project2.html">2048 Game</a></h3>
+                <p>2048 game using PYgame Python library (Implemented PyGame library into the game)</p>
+            </div>
+            <div class="project-box">
+                <img src="media/automated_water_irrigation_system.jpeg" alt="Automated Water Irrigation System">
+                <h3><a href="project3.html">Automated Water Irrigation System</a></h3>
+                <p>IOT based Automated water irrigation system (Hardware selection and IOT integration between code and hardware)</p>
+            </div>
+            <div class="project-box">
+                <img src="media/ai_image_upscaler.jpeg" alt="AI Image Upscaler">
+                <h3><a href="project4.html">AI Image Upscaler</a></h3>
+                <p>AI image Upscaler using CNN (Developed an AI software which improves image quality)</p>
+            </div>
+            <div class="project-box">
+                <img src="media//vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker">
+                <h3><a href="project5.html">Vehicle Location and Speed Tracker</a></h3>
+                <p>IOT based vehicle Location and speed tracker (Developed an IOT based location and speed tracker for vehicles)</p>
+            </div>
+            <div class="project-box">
+                <img src="media/portfolio.jpeg" alt="Personal Portfolio Website">
+                <h3><a href="project6.html">Personal Portfolio Website</a></h3>
+                <p>A personal portfolio website to showcase projects and qualifications (Developed using HTML, CSS, JavaScript)</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="qualifications">
+        <div class="container">
+            <h2>Qualifications</h2>
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li><i class="fas fa-graduation-cap icon"></i> <strong>Mumbai University</strong>, Mumbai, India | BE in Computer Engineering (Currently pursuing 3rd year)</li>
+                    <li><i class="fas fa-school icon"></i> <strong>RIMS International Junior College</strong>, Mumbai, India | 12th HSC | Scored: 63.85%</li>
+                    <li><i class="fas fa-school icon"></i> <strong>St. Mary's High School</strong>, Mumbai, India | 10th SSC | Scored: 73%</li>
+                </ul>
+            </div>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <h4><i class="fas fa-code icon"></i> Programming Languages</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skills-box">
+                    <h4><i class="fas fa-lightbulb icon"></i> Soft Skills</h4>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Adaptability</li>
+                        <li>Problem Solving</li>
+                        <li>Leadership</li>
+                        <li>Emotional Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>        
+    
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certification-container">
+                <div class="certification-box">
+                    <a href="media/NPTEL.jpg" data-lightbox="certificates" data-title="Demystifying Networking certification by Swayam (2023)">
+                        <img src="media/NPTEL.jpg" alt="Demystifying Networking certification">
+                    </a>
+                    <h3>Demystifying Networking certification by Swayam (2023)</h3>
+                </div>
+                <div class="certification-box">
+                    <a href="media/WEB-DEV.jpg" data-lightbox="certificates" data-title="HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)">
+                        <img src="media/WEB-DEV.jpg" alt="HTML, CSS & JavaScript for Web Development">
+                    </a>
+                    <h3>HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)</h3>
+                </div>
+                <div class="certification-box">
+                    <a href="media/AIML.jpg" data-lightbox="certificates" data-title="AI/ML workshop by Techobyte at IITB">
+                        <img src="media/AIML.jpg" alt="AI/ML workshop by Techobyte at IITB">
+                    </a>
+                    <h3>AI/ML workshop by Techobyte at IITB</h3>
+                </div>
+                <div class="certification-box">
+                    <a href="media/AWS CF.jpg" data-lightbox="certificates" data-title="AWS Academy Graduate - AWS Academy Cloud Foundations">
+                        <img src="media/AWS CF.jpg" alt="AWS Academy Cloud Foundations">
+                    </a>
+                    <h3>AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container contact-container">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <p><a href="mailto:aimaanjkhaan@gmail.com"><i class="fas fa-envelope icon"></i> aimaanjkhaan@gmail.com</a></p>
+                <p><i class="fas fa-phone icon"></i> +91 99877 86026</p>
+                <p>Connect with me on:</p>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/aimaan-khan-56a621250/"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/AiMk937"><i class="fab fa-github icon"></i> GitHub</a></li>
+                    <li><a href="https://www.instagram.com/__aimaan_k__/"><i class="fab fa-instagram icon"></i> Instagram</a></li>
+                </ul>
+                <p><a href="media/Resume_AimaanKhan.pdf" class="button">Download Resume</a></p>
+            </div>
+            <form action="https://formspree.io/f/mpzvgrjj" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>                
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById('navbar');
+            if (navbar.classList.contains('hidden')) {
+                navbar.classList.remove('hidden');
+            } else {
+                navbar.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
