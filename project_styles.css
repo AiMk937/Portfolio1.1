@@ -7,7 +7,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('media/BG.jpeg') no-repeat center center/cover;
+    background: url('path/to/your/background-image.png') no-repeat center center/cover;
     background-size: cover;
     color: var(--text-color, #333);
     transition: background-color 0.3s, color 0.3s;
@@ -269,7 +269,17 @@ body.dark-mode .dropdown-content a {
 body.dark-mode .dropdown-content a:hover {
     background-color: #706f6f;
 }
+/* Responsive Design */
 
+@media (max-width: 768px) {
+    #qualifications .skills-container {
+        flex-direction: column;
+    }
+
+    #qualifications .skills-box {
+        margin-bottom: 1.5em;
+    }
+}
 
 /* Mobile Phones */
 @media (max-width: 480px) {
