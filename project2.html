@@ -11,7 +11,7 @@
     <header>
         <h1>2048 Game</h1>
         <div class="header-buttons">
-            <a href="index.html" class="button home-button">Home</a>
+            <a href="index.html" class="button">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Projects</button>
                 <div class="dropdown-content">
@@ -23,49 +23,51 @@
                     <a href="project6.html">Personal Portfolio Website</a>
                 </div>
             </div>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-            <i class="fas fa-moon"></i>
-        </button>
     </header>
     <section>
-        <div class="container">
-            <img src="media/2048_game.jpeg" alt="2048 Game" class="project-icon-small">
-            <h2 id="overview">Overview</h2>
-            <p>2048 game using PYgame Python library (Implemented PyGame library into the game).</p>
-
-            <h2 id="problem">Problem Statement</h2>
-            <p>The 2048 game is a popular puzzle game that requires a smooth and interactive user experience. There is a need to develop a version of this game using Python to leverage its simplicity and effectiveness.</p>
-
-            <h2 id="solution">Solution</h2>
-            <p>This project implements the 2048 game using the PyGame library in Python, providing an engaging and interactive experience for users.</p>
-
-            <h2 id="technologies">Technologies Used</h2>
-            <ul>
-                <li>Python</li>
-                <li>PyGame Library</li>
-            </ul>
-
-            <h2 id="features">Features</h2>
-            <ul>
-                <li>Interactive gameplay</li>
-                <li>Smooth animations</li>
-                <li>High score tracking</li>
-                <li>Responsive controls</li>
-            </ul>
-
-            <h2 id="enhancements">Future Enhancements</h2>
-            <ul>
-                <li>Adding different game modes</li>
-                <li>Implementing online leaderboards</li>
-                <li>Creating a mobile version of the game</li>
-            </ul>
+        <img src="media/2048_game.jpeg" alt="2048 Game" class="project-icon-small">
+        <h2>Overview</h2>
+        <div class="project-details">
+            <div class="project-box">
+                <h3>Problem Statement</h3>
+                <p>The 2048 game is a popular puzzle game that requires a smooth and interactive user experience. There is a need to develop a version of this game using Python to leverage its simplicity and effectiveness.</p>
+            </div>
+            <div class="project-box">
+                <h3>Solution</h3>
+                <p>This project implements the 2048 game using the PyGame library in Python, providing an engaging and interactive experience for users.</p>
+            </div>
+            <div class="project-box">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>PyGame Library</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Features</h3>
+                <ul>
+                    <li>Interactive gameplay</li>
+                    <li>Smooth animations</li>
+                    <li>High score tracking</li>
+                    <li>Responsive controls</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Future Enhancements</h3>
+                <ul>
+                    <li>Adding different game modes</li>
+                    <li>Implementing online leaderboards</li>
+                    <li>Creating a mobile version of the game</li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>

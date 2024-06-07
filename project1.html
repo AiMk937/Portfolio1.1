@@ -11,7 +11,7 @@
     <header>
         <h1>Currency Converter</h1>
         <div class="header-buttons">
-            <a href="index.html" class="button home-button">Home</a>
+            <a href="index.html" class="button">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Projects</button>
                 <div class="dropdown-content">
@@ -23,50 +23,52 @@
                     <a href="project6.html">Personal Portfolio Website</a>
                 </div>
             </div>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-            <i class="fas fa-moon"></i>
-        </button>
     </header>
     <section>
-        <div class="container">
-            <img src="media/currency_converter.jpeg" alt="Currency Converter" class="project-icon-small">
-            <h2 id="overview">Overview</h2>
-            <p>Currency converter based on Java (API integration for real-time conversion rates).</p>
-
-            <h2 id="problem">Problem Statement</h2>
-            <p>Users often face difficulties in converting currencies accurately due to constantly fluctuating exchange rates. There is a need for a reliable and real-time currency conversion tool that integrates with live exchange rate APIs.</p>
-
-            <h2 id="solution">Solution</h2>
-            <p>The Currency Converter application provides real-time conversion rates by integrating with a reliable currency exchange rate API. It allows users to convert between different currencies quickly and accurately.</p>
-
-            <h2 id="technologies">Technologies Used</h2>
-            <ul>
-                <li>Java</li>
-                <li>API Integration</li>
-                <li>JavaFX for User Interface</li>
-            </ul>
-
-            <h2 id="features">Features</h2>
-            <ul>
-                <li>Real-time currency conversion</li>
-                <li>User-friendly interface</li>
-                <li>Support for multiple currencies</li>
-                <li>Automatic updates of exchange rates</li>
-            </ul>
-
-            <h2 id="enhancements">Future Enhancements</h2>
-            <ul>
-                <li>Adding a feature to display historical exchange rate data</li>
-                <li>Implementing support for cryptocurrencies</li>
-                <li>Introducing a mobile version of the application</li>
-            </ul>
+        <img src="media/currency_converter.jpeg" alt="Currency Converter" class="project-icon-small">
+        <h2>Overview</h2>
+        <div class="project-details">
+            <div class="project-box">
+                <h3>Problem Statement</h3>
+                <p>Users often face difficulties in converting currencies accurately due to constantly fluctuating exchange rates. There is a need for a reliable and real-time currency conversion tool that integrates with live exchange rate APIs.</p>
+            </div>
+            <div class="project-box">
+                <h3>Solution</h3>
+                <p>The Currency Converter application provides real-time conversion rates by integrating with a reliable currency exchange rate API. It allows users to convert between different currencies quickly and accurately.</p>
+            </div>
+            <div class="project-box">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>API Integration</li>
+                    <li>JavaFX for User Interface</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Features</h3>
+                <ul>
+                    <li>Real-time currency conversion</li>
+                    <li>User-friendly interface</li>
+                    <li>Support for multiple currencies</li>
+                    <li>Automatic updates of exchange rates</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Future Enhancements</h3>
+                <ul>
+                    <li>Adding a feature to display historical exchange rate data</li>
+                    <li>Implementing support for cryptocurrencies</li>
+                    <li>Introducing a mobile version of the application</li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>

@@ -216,6 +216,62 @@ img.project-icon-small {
     margin: 0 auto 2em;
 }
 
+/* Project Details Styles */
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em; /* Increase gap for better spacing */
+    justify-content: space-around;
+}
+
+.project-box {
+    flex: 1 1 30%; /* Ensure three boxes per row, flex-grow, flex-shrink, flex-basis */
+    padding: 2em; /* Increase padding for more content space */
+    background-color: rgba(0, 112, 227, 0.1); /* Slightly more blue tint */
+    border-radius: 15px; /* Increase border-radius for more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Increase shadow for more depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for both transform and shadow */
+    text-align: center; /* Center-align text for better aesthetics */
+}
+
+.project-box:hover {
+    transform: scale(1.05); /* Increase scale on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Darker and larger shadow on hover */
+}
+
+.project-box h3 {
+    margin-top: 0;
+    margin-bottom: 1em; /* Add space below heading */
+    color: #0071e3; /* Highlight heading color */
+    font-size: 1.5em; /* Increase font size */
+}
+
+.project-box p, .project-box ul {
+    margin: 0;
+    font-size: 1.1em; /* Slightly increase font size for readability */
+    line-height: 1.6em; /* Improve line height for better readability */
+    color: #666; /* Use a soft gray for text */
+}
+
+.project-box ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Left-align list items */
+}
+
+.project-box ul li {
+    margin-bottom: 0.5em; /* Add space between list items */
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center-align items */
+}
+
+.project-box ul li::before {
+    content: '•'; /* Use bullet point */
+    color: #0071e3; /* Highlight bullet color */
+    font-size: 1.5em; /* Increase bullet size */
+    margin-right: 0.5em; /* Add space between bullet and text */
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -269,6 +325,8 @@ body.dark-mode .dropdown-content a {
 body.dark-mode .dropdown-content a:hover {
     background-color: #706f6f;
 }
+
+
 /* Responsive Design */
 
 @media (max-width: 768px) {

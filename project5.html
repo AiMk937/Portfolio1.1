@@ -11,7 +11,7 @@
     <header>
         <h1>Vehicle Location and Speed Tracker</h1>
         <div class="header-buttons">
-            <a href="index.html" class="button home-button">Home</a>
+            <a href="index.html" class="button">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Projects</button>
                 <div class="dropdown-content">
@@ -23,51 +23,53 @@
                     <a href="project6.html">Personal Portfolio Website</a>
                 </div>
             </div>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-            <i class="fas fa-moon"></i>
-        </button>
     </header>
     <section>
-        <div class="container">
-            <img src="media/vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker" class="project-icon-small">
-            <h2 id="overview">Overview</h2>
-            <p>IOT based vehicle Location and speed tracker (Developed an IOT based location and speed tracker for vehicles).</p>
-
-            <h2 id="problem">Problem Statement</h2>
-            <p>Monitoring the location and speed of vehicles in real-time is essential for fleet management, safety, and logistics. There is a need for an efficient system that can provide accurate and real-time data.</p>
-
-            <h2 id="solution">Solution</h2>
-            <p>This project develops an IoT-based system that tracks the location and speed of vehicles in real-time using GPS and other sensors.</p>
-
-            <h2 id="technologies">Technologies Used</h2>
-            <ul>
-                <li>IoT</li>
-                <li>GPS</li>
-                <li>Arduino/Raspberry Pi</li>
-                <li>Real-time Data Processing</li>
-            </ul>
-
-            <h2 id="features">Features</h2>
-            <ul>
-                <li>Real-time location tracking</li>
-                <li>Speed monitoring</li>
-                <li>Data logging and analysis</li>
-                <li>Alerts and notifications</li>
-            </ul>
-
-            <h2 id="enhancements">Future Enhancements</h2>
-            <ul>
-                <li>Adding geofencing capabilities</li>
-                <li>Implementing driver behavior analysis</li>
-                <li>Integrating with existing fleet management systems</li>
-            </ul>
+        <img src="media/vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker" class="project-icon-small">
+        <h2>Overview</h2>
+        <div class="project-details">
+            <div class="project-box">
+                <h3>Problem Statement</h3>
+                <p>Monitoring the location and speed of vehicles in real-time is essential for fleet management, safety, and logistics. There is a need for an efficient system that can provide accurate and real-time data.</p>
+            </div>
+            <div class="project-box">
+                <h3>Solution</h3>
+                <p>This project develops an IoT-based system that tracks the location and speed of vehicles in real-time using GPS and other sensors.</p>
+            </div>
+            <div class="project-box">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>IoT</li>
+                    <li>GPS</li>
+                    <li>Arduino/Raspberry Pi</li>
+                    <li>Real-time Data Processing</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Features</h3>
+                <ul>
+                    <li>Real-time location tracking</li>
+                    <li>Speed monitoring</li>
+                    <li>Data logging and analysis</li>
+                    <li>Alerts and notifications</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Future Enhancements</h3>
+                <ul>
+                    <li>Adding geofencing capabilities</li>
+                    <li>Implementing driver behavior analysis</li>
+                    <li>Integrating with existing fleet management systems</li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>

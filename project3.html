@@ -11,7 +11,7 @@
     <header>
         <h1>Automated Water Irrigation System</h1>
         <div class="header-buttons">
-            <a href="index.html" class="button home-button">Home</a>
+            <a href="index.html" class="button">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Projects</button>
                 <div class="dropdown-content">
@@ -23,51 +23,53 @@
                     <a href="project6.html">Personal Portfolio Website</a>
                 </div>
             </div>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-            <i class="fas fa-moon"></i>
-        </button>
     </header>
     <section>
-        <div class="container">
-            <img src="media/automated_water_irrigation_system.jpeg" alt="Automated Water Irrigation System" class="project-icon-small">
-            <h2 id="overview">Overview</h2>
-            <p>IOT based Automated water irrigation system (Hardware selection and IOT integration between code and hardware).</p>
-
-            <h2 id="problem">Problem Statement</h2>
-            <p>Manual irrigation systems are inefficient and waste a significant amount of water. There is a need for an automated system that can monitor soil moisture and manage irrigation efficiently.</p>
-
-            <h2 id="solution">Solution</h2>
-            <p>This project develops an IoT-based automated water irrigation system that monitors soil moisture and automates irrigation, ensuring optimal water usage.</p>
-
-            <h2 id="technologies">Technologies Used</h2>
-            <ul>
-                <li>IoT</li>
-                <li>Arduino</li>
-                <li>Soil Moisture Sensors</li>
-                <li>Water Pumps</li>
-            </ul>
-
-            <h2 id="features">Features</h2>
-            <ul>
-                <li>Automated irrigation based on soil moisture levels</li>
-                <li>Remote monitoring and control</li>
-                <li>Efficient water usage</li>
-                <li>Real-time data logging</li>
-            </ul>
-
-            <h2 id="enhancements">Future Enhancements</h2>
-            <ul>
-                <li>Integrating weather forecast data for more efficient irrigation</li>
-                <li>Developing a mobile app for monitoring and control</li>
-                <li>Adding support for multiple zones with different irrigation needs</li>
-            </ul>
+        <img src="media/automated_water_irrigation_system.jpeg" alt="Automated Water Irrigation System" class="project-icon-small">
+        <h2>Overview</h2>
+        <div class="project-details">
+            <div class="project-box">
+                <h3>Problem Statement</h3>
+                <p>Manual irrigation systems are inefficient and waste a significant amount of water. There is a need for an automated system that can monitor soil moisture and manage irrigation efficiently.</p>
+            </div>
+            <div class="project-box">
+                <h3>Solution</h3>
+                <p>This project develops an IoT-based automated water irrigation system that monitors soil moisture and automates irrigation, ensuring optimal water usage.</p>
+            </div>
+            <div class="project-box">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>IoT</li>
+                    <li>Arduino</li>
+                    <li>Soil Moisture Sensors</li>
+                    <li>Water Pumps</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Features</h3>
+                <ul>
+                    <li>Automated irrigation based on soil moisture levels</li>
+                    <li>Remote monitoring and control</li>
+                    <li>Efficient water usage</li>
+                    <li>Real-time data logging</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Future Enhancements</h3>
+                <ul>
+                    <li>Integrating weather forecast data for more efficient irrigation</li>
+                    <li>Developing a mobile app for monitoring and control</li>
+                    <li>Adding support for multiple zones with different irrigation needs</li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>

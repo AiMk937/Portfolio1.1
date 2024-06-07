@@ -11,7 +11,7 @@
     <header>
         <h1>Personal Portfolio Website</h1>
         <div class="header-buttons">
-            <a href="index.html" class="button home-button">Home</a>
+            <a href="index.html" class="button">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Projects</button>
                 <div class="dropdown-content">
@@ -23,50 +23,52 @@
                     <a href="project6.html">Personal Portfolio Website</a>
                 </div>
             </div>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-            <i class="fas fa-moon"></i>
-        </button>
     </header>
     <section>
-        <div class="container">
-            <img src="media/portfolio.jpeg" alt="Personal Portfolio Website" class="project-icon-small">
-            <h2 id="overview">Overview</h2>
-            <p>A personal portfolio website to showcase projects and qualifications (Developed using HTML, CSS, JavaScript).</p>
-
-            <h2 id="problem">Problem Statement</h2>
-            <p>Creating a professional online presence is crucial for showcasing skills and projects. There is a need for a well-designed personal portfolio website that highlights my work effectively.</p>
-
-            <h2 id="solution">Solution</h2>
-            <p>This project involves developing a personal portfolio website that displays my projects, skills, and qualifications in a user-friendly and visually appealing manner.</p>
-
-            <h2 id="technologies">Technologies Used</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-
-            <h2 id="features">Features</h2>
-            <ul>
-                <li>Responsive design</li>
-                <li>Project showcase</li>
-                <li>Contact form</li>
-                <li>Interactive elements</li>
-            </ul>
-
-            <h2 id="enhancements">Future Enhancements</h2>
-            <ul>
-                <li>Adding more projects</li>
-                <li>Integrating a blog section</li>
-                <li>Improving the contact form with validation</li>
-            </ul>
+        <img src="media/portfolio.jpeg" alt="Personal Portfolio Website" class="project-icon-small">
+        <h2>Overview</h2>
+        <div class="project-details">
+            <div class="project-box">
+                <h3>Problem Statement</h3>
+                <p>Creating a personal portfolio website to showcase projects and qualifications is essential for personal branding and career opportunities. There is a need for an attractive and functional portfolio website.</p>
+            </div>
+            <div class="project-box">
+                <h3>Solution</h3>
+                <p>This project develops a personal portfolio website using HTML, CSS, and JavaScript to showcase projects, qualifications, and contact information.</p>
+            </div>
+            <div class="project-box">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Features</h3>
+                <ul>
+                    <li>Responsive design</li>
+                    <li>Project showcase</li>
+                    <li>Contact form</li>
+                    <li>Dynamic content loading</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Future Enhancements</h3>
+                <ul>
+                    <li>Adding a blog section</li>
+                    <li>Integrating with social media APIs</li>
+                    <li>Implementing a CMS for easy content updates</li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
