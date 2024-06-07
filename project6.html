@@ -9,13 +9,24 @@
 </head>
 <body>
     <header>
-        <div class="container header-container">
-            <h1>Personal Portfolio Website</h1>
+        <h1>Personal Portfolio Website</h1>
+        <div class="header-buttons">
             <a href="index.html" class="button home-button">Home</a>
-            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
-                <i class="fas fa-moon"></i>
-            </button>
+            <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="project1.html">Currency Converter</a>
+                    <a href="project2.html">2048 Game</a>
+                    <a href="project3.html">Automated Water Irrigation System</a>
+                    <a href="project4.html">AI Image Upscaler</a>
+                    <a href="project5.html">Vehicle Location and Speed Tracker</a>
+                    <a href="project6.html">Personal Portfolio Website</a>
+                </div>
+            </div>
         </div>
+        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
     <section>
         <div class="container">
@@ -24,34 +35,31 @@
             <p>A personal portfolio website to showcase projects and qualifications (Developed using HTML, CSS, JavaScript).</p>
 
             <h2 id="problem">Problem Statement</h2>
-            <p>There is a need to present my projects, skills, and experience in a professional and accessible manner. A personal portfolio website serves as a centralized platform to showcase my work and abilities to potential employers and collaborators.</p>
+            <p>Creating a professional online presence is crucial for showcasing skills and projects. There is a need for a well-designed personal portfolio website that highlights my work effectively.</p>
 
             <h2 id="solution">Solution</h2>
-            <p>This project involves the development of a personal portfolio website that provides detailed information about my projects, skills, and experience. The website features a modern, responsive design and includes sections for an overview, projects, qualifications, certifications, and contact information.</p>
+            <p>This project involves developing a personal portfolio website that displays my projects, skills, and qualifications in a user-friendly and visually appealing manner.</p>
 
             <h2 id="technologies">Technologies Used</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>Font Awesome</li>
-                <li>Google Fonts</li>
             </ul>
 
             <h2 id="features">Features</h2>
             <ul>
                 <li>Responsive design</li>
-                <li>Project showcases with detailed descriptions and images</li>
-                <li>Sections for qualifications and certifications</li>
-                <li>Contact form for direct communication</li>
-                <li>Theme switcher for light and dark modes</li>
+                <li>Project showcase</li>
+                <li>Contact form</li>
+                <li>Interactive elements</li>
             </ul>
 
             <h2 id="enhancements">Future Enhancements</h2>
             <ul>
-                <li>Adding a blog section for sharing knowledge and insights</li>
-                <li>Implementing a CMS for easier content management</li>
-                <li>Enhancing SEO for better visibility</li>
+                <li>Adding more projects</li>
+                <li>Integrating a blog section</li>
+                <li>Improving the contact form with validation</li>
             </ul>
         </div>
     </section>
