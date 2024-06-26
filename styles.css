@@ -529,13 +529,14 @@ body.dark-mode .certification-box h3 {
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 1em 0;
+    /* padding: 1em 0; */
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
     border-top: 1px solid #e0e0e0;
     position: relative;
     width: 100%;
     bottom: 0;
+    height: max-content;
 }
 /* Dark Mode Variables */
 :root {
