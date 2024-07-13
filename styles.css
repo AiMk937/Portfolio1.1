@@ -604,6 +604,7 @@ body.dark-mode .dropdown-content a:hover {
 
     #qualifications .skills-box {
         margin-bottom: 1.5em;
+        width: auto;
     }
 }
 
@@ -632,6 +633,20 @@ body.dark-mode .dropdown-content a:hover {
         width: 100%;
         margin: 1em 0;
     }
+    .certification-box{
+        width: max-content;
+    }
+    .certification-box img{
+        height: 30vh;
+    }
+    #qualifications .skills-box {
+        margin-bottom: 1.5em;
+        width: auto;
+    }
+
+    .education ul{
+        font-size: 1.5vh;
+    }
 }
 
 /* Tablets */
@@ -659,6 +674,13 @@ body.dark-mode .dropdown-content a:hover {
         width: 48%;
         margin: 1em 0;
     }
+    .certification-box{
+        width: max-content;
+    }
+    #qualifications .skills-box {
+        margin-bottom: 1.5em;
+        width: auto;
+    }
 }
 
 /* Laptops */
@@ -685,6 +707,13 @@ body.dark-mode .dropdown-content a:hover {
     .project-box {
         width: 30%;
         margin: 1em 0;
+    }
+    .certification-box{
+        width: max-content;
+    }
+    #qualifications .skills-box {
+        margin-bottom: 1.5em;
+        width: auto;
     }
 }
 
