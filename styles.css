@@ -632,6 +632,9 @@ body.dark-mode .dropdown-content a:hover {
         width: 100%;
         margin: 1em 0;
     }
+    .certification-box img{
+        width: auto;
+    }
 }
 
 /* Tablets */
