@@ -278,6 +278,25 @@ body.dark-mode .experience-box h3 {
     width: calc(50% - 1em);
 }
 
+#qualifications .education-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* width: calc(50% - 1em); */
+}
+
+#qualifications .education-box h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
 body.dark-mode #qualifications .skills-box {
     background-color: #2c2c2c;
     color: #d4d4d4;
@@ -313,6 +332,43 @@ body.dark-mode #qualifications .skills-box {
 #qualifications .skills-box ul li .icon {
     margin-right: 0.5em;
     font-size: 1.5em;
+}
+
+/* Tooltip Styling */
+#qualifications .skills-box ul li {
+    position: relative; /* Position relative for tooltip positioning */
+}
+
+#qualifications .skills-box ul li .tooltip {
+    display: none; /* Hidden by default */
+    position: absolute;
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%);
+    top: 150%; /* Positioned below the list item */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 100; /* Ensures it appears above other elements */
+}
+
+/* Hover Effect */
+#qualifications .skills-box ul li:hover .tooltip {
+    display: block; /* Display tooltip on hover */
+}
+
+/* Tooltip Animation */
+#qualifications .skills-box ul li .tooltip {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#qualifications .skills-box ul li:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5%);
 }
 
 /* Project Section Styles */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Based Timetable Scheduler</title>
+    <link rel="stylesheet" href="project_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>AI Based Timetable Scheduler</h1>
+        <div class="header-buttons">
+            <a href="index.html" class="button">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="project1.html">Currency Converter</a>
+                    <a href="project2.html">2048 Game</a>
+                    <a href="project3.html">Automated Water Irrigation System</a>
+                    <a href="project4.html">AI Image Upscaler</a>
+                    <a href="project5.html">Vehicle Location and Speed Tracker</a>
+                    <a href="project6.html">Personal Portfolio Website</a>
+                    <a href="project7.html">Toxic Comment Detector</a>
+                    <a href="project8.html">AI based Timetable Scheduler</a>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+    <section>
+        <img src="media/proj_images/AI timetable.jpeg" alt="AI Based Timetable Scheduler"
+            class="project-icon-small">
+        <h2>Overview</h2>
+        <div class="project-details">
+            <div class="project-box">
+                <h3>Problem Statement</h3>
+                <p>
+                    Managing academic schedules is increasingly challenging due to growing student numbers,
+                    diverse course offerings, and limited infrastructure. Manual timetable creation is
+                    time-consuming, error-prone, and often results in conflicts and inefficiencies.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>Solution</h3>
+                <p>
+                    This project automates academic scheduling using a hybrid AI approach combining Random
+                    Forest and Genetic Algorithm (GA). It optimizes resource allocation by factoring in constraints
+                    like teacher availability, room capacity, and lab scheduling, ensuring conflict-free timetables.
+                    Built on a Node.js backend and MongoDB, it provides scalability and flexibility.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Node.js and Express.js for backend development</li>
+                    <li>MongoDB for data storage</li>
+                    <li>HTML/CSS and React.js for frontend interface</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Features</h3>
+                <ul>
+                    <li>Conflict-free timetables based on teacher, room, and subject constraints</li>
+                    <li>Automated resolution for overlapping schedules</li>
+                    <li>Real-time updates for last-minute changes</li>
+                    <li>Optimized workload distribution for teachers and classrooms</li>
+                    <li>User-friendly web interface with dynamic scheduling</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Future Enhancements</h3>
+                <ul>
+                    <li>Integration of advanced AI models for better adaptability</li>
+                    <li>Support for multi-campus scheduling and larger datasets</li>
+                    <li>Real-time analytics and reporting features</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

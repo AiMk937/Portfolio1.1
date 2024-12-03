@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxic Comment Detector</title>
+    <link rel="stylesheet" href="project_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Currency Converter</h1>
+        <div class="header-buttons">
+            <a href="index.html" class="button">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="project1.html">Currency Converter</a>
+                    <a href="project2.html">2048 Game</a>
+                    <a href="project3.html">Automated Water Irrigation System</a>
+                    <a href="project4.html">AI Image Upscaler</a>
+                    <a href="project5.html">Vehicle Location and Speed Tracker</a>
+                    <a href="project6.html">Personal Portfolio Website</a>
+                    <a href="project7.html">Toxic Comment Detector</a>
+                    <a href="project8.html">AI based Timetable Scheduler</a>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+    <section>
+        <img src="media/proj_images/TOXIC.jpeg" alt="Toxic comment detector" class="project-icon-small">
+        <h2>Overview</h2>
+        <div class="project-details">
+            <div class="project-box">
+                <h3>Problem Statement</h3>
+                <p>
+                    Online platforms often suffer from harmful and toxic comments that disrupt user experience and
+                    create unsafe environments. There is a need for an AI-based solution to automatically detect
+                    and mitigate toxic comments, ensuring safer digital interactions.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>Solution</h3>
+                <p>
+                    This project leverages Natural Language Processing (NLP) techniques and Machine Learning (ML)
+                    models to analyze and classify user comments into six toxicity categories: toxic, severe toxic,
+                    obscene, threat, insult, and identity hate. It provides real-time toxicity detection
+                    through a user-friendly web application.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Logistic Regression for multi-label classification</li>
+                    <li>TF-IDF Vectorization for feature extraction</li>
+                    <li>Python for development</li>
+                    <li>Flask for web application deployment</li>
+                    <li>Jigsaw Toxic Comment Dataset for training and testing</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Features</h3>
+                <ul>
+                    <li>Real-time toxicity detection and analysis</li>
+                    <li>Classification into six toxicity categories</li>
+                    <li>Scalable and accurate model</li>
+                    <li>Web-based user-friendly interface</li>
+                    <li>Text preprocessing with tokenization, stopword removal, and lemmatization</li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h3>Future Enhancements</h3>
+                <ul>
+                    <li>Integration of advanced models like BERT for contextual understanding</li>
+                    <li>Handling class imbalance using oversampling techniques</li>
+                    <li>Multi-language support for diverse user bases</li>
+                    <li>Deployment improvements to handle real-time, large-scale comments</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
